@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Calculator!</title>
+        <link rel="stylesheet" type="text/css" href="top-library.css"/>
+    </head>
+
+    <body>
+        <main>
+            <article id="my-article" class="container">
+
+                <section class="section1">
+                    <header>
+                        <h1 class="caption">Books in the library</h1>
+                    </header>
+
+                    <div id="grid-layout"></div>
+                </section>
+
+                <section class="section2">
+                    <header>
+                        <h1 class="caption">Library DB</h1>
+                    </header>
+
+                    <div>
+                        <div id="total-books" class="fraction">Total books:</div>
+                        <div id="books-read" class="fraction">Books read:</div>
+                        <div id="books-not-read" class="fraction">Books not read:</div>
+                        <div id="pages-read" class="fraction">Pages read:</div>
+                        <div id="total-pages" class="fraction">Total pages:</div>
+                        <div id="completion-percent" class="fraction">Completion %:</div>
+                    </div>
+                </section>
+
+                <div id="open-form" class="section3">Add a book</div>
+            
+            </article>
+
+            <form id="the-form" class="form-container" method>
+                <label class="form-item" for="title">Name of the book</label>
+                <input type="text" id="title" name="title" value="" required>
+
+                <label class="form-item" for="author">Author's name</label>
+                <input type="text" id="author" name="author" value="" required>
+
+                <label class="form-item" for="pages">Number of pages</label>
+                <input type="number" id="pages" name="pages" value="" required>
+
+                <label class="form-item" for="read-status">Read status</label>
+                <select name="read-status" id="read-status" required>
+                    <option value="read">Read</option>
+                    <option value="unread">Unread</option>
+                </select><br>
+                
+                <div id="submit-book" class="btn">Add book</div>
+                <div id="close-form" class="btn">Close</div>
+            </form>
+        </main>
+    </body>
+    
+    <script src="top-library.js"></script>
+
+</html>
